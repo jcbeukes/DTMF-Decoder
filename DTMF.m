@@ -1,6 +1,6 @@
 clear;
 clc;
-[y,Fs] = audioread('dtmf.wav');
+[y,Fs] = audioread('dtmfA1.wav');
 N = 100;
 freqs = [697,770,852,941,1209,1336,1477];
 inst_power = filter(ones(1,N)/N,1,y.*y);
