@@ -40,12 +40,8 @@ for h = 1:length(beginning)
     z = [z1(len(h)+1),z2(len(h)+1),z3(len(h)+1),z4(len(h)+1),z5(len(h)+1),z6(len(h)+1),z7(len(h)+1),z8(len(h)+1)];
     r = find(abs(z(1:4)) == max(abs(z(1:4))));
     c = find(abs(z(5:8)) == max(abs(z(5:8))));
-<<<<<<< HEAD
-    num = find_num(r,c);
-    
-=======
     num = num_array(r,c);
->>>>>>> 55e9a4df06697be9a4ab68b841dad7babd5f88f7
+    
     if(num == 10)
         fprintf('%s', 'A');
     elseif(num == 11)
