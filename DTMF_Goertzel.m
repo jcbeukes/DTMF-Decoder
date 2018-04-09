@@ -1,4 +1,5 @@
 clear;
+clc;
 [y,Fs] = audioread('dtmfN3.wav');
 
 N = 100;
@@ -52,5 +53,5 @@ for h = 1:length(beginning)
         fprintf('%s', 'D');
     else
     fprintf('%d', num);
-    end;
-end;
+    end
+end
