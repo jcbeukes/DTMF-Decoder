@@ -39,6 +39,7 @@ for h = 1:length(beginning)
     r = find(abs(z(1:4)) == max(abs(z(1:4))));
     c = find(abs(z(5:8)) == max(abs(z(5:8))));
     num = find_num(r,c);
+    
     if(num == 10)
         fprintf('%s', 'A');
     elseif(num == 11)
